@@ -5,6 +5,7 @@
     "sdk" : "org.gnome.Sdk",
     "command" : "cowsay",
     "finish-args" : [
+        "--share=network",
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland"
@@ -37,6 +38,30 @@
             ]
         },
         {
+            "name" : "lipsoup",
+            "buildsystem": "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libsoup.git",
+                    "tag": "2.67.92",
+                    "commit": "b6a66150224013ffaa48c9f1fb52785a8e4c604e"
+                }
+            ]
+        },
+        {
+            "name" : "json-glib",
+            "buildsystem": "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/json-glib.git",
+                    "tag": "1.4.4",
+                    "commit": "700a8bc414991d35ff3f79607547d4beedac8629"
+                }
+            ]
+        },
+        {
             "name" : "cowsay",
             "buildsystem" : "meson",
             "config-opts" : [
@@ -47,8 +72,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/Eonfge/cowsay.git",
-                    "tag": "1.2.0",
-                    "commit": "d13af05fa47042c02083526099b95ad92483ac4c"
+                    "tag": "1.3.0",
+                    "commit": "d7192f44614b54954b2e98a7727e5ac25f67d2d0"
                 }
             ]
         }
