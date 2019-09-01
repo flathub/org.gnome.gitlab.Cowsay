@@ -8,7 +8,12 @@
         "--share=network",
         "--share=ipc",
         "--socket=x11",
-        "--socket=wayland"
+        "--socket=wayland",
+        /* Required for now, likely not in 1.5.0 */
+        "--filesystem=xdg-run/dconf",
+        "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf",
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
     "cleanup" : [
         "/include",
