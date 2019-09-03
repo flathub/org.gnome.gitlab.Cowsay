@@ -9,7 +9,6 @@
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland",
-        /* Required for now, likely not in 1.5.0 */
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf",
@@ -77,8 +76,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/Eonfge/cowsay.git",
-                    "tag": "1.4.0",
-                    "commit": "60ea13a321ac61554fd55ccb49dee40a57f7547e"
+                    "tag": "1.5.0",
+                    "commit": "1d91cb49a0a2ba9d075241338ec45059c4f2b279"
                 }
             ]
         }
