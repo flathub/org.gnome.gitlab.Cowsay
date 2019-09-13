@@ -1,18 +1,14 @@
 {
     "app-id" : "org.gnome.gitlab.Cowsay",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.32",
+    "runtime-version" : "3.34",
     "sdk" : "org.gnome.Sdk",
     "command" : "cowsay",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
         "--socket=x11",
-        "--socket=wayland",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--socket=wayland"
     ],
     "cleanup" : [
         "/include",
@@ -28,44 +24,6 @@
     ],
     "modules" : [
         {
-            "name" : "libgee",
-            "config-opts" : [
-                "--enable-introspection=no"
-            ],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libgee.git",
-                    "tag": "0.20.2",
-                    "commit": "5e66324654b7d70d7c28793491a4edfe6d8a0d85"
-                }
-            ]
-        },
-        {
-            "name" : "lipsoup",
-            "buildsystem": "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libsoup.git",
-                    "tag": "2.67.92",
-                    "commit": "b6a66150224013ffaa48c9f1fb52785a8e4c604e"
-                }
-            ]
-        },
-        {
-            "name" : "json-glib",
-            "buildsystem": "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/json-glib.git",
-                    "tag": "1.4.4",
-                    "commit": "700a8bc414991d35ff3f79607547d4beedac8629"
-                }
-            ]
-        },
-        {
             "name" : "cowsay",
             "buildsystem" : "meson",
             "config-opts" : [
@@ -76,8 +34,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/Eonfge/cowsay.git",
-                    "tag": "1.6.1",
-                    "commit": "ce5f47698af42aba4236bc75af0ea80ed7bab1a3"
+                    "tag": "1.6.2",
+                    "commit": "b5433d9a3b2c6706c0c2bba422500f9b577ca802"
                 }
             ]
         }
