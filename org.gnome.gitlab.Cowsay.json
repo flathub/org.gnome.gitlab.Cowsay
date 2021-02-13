@@ -34,8 +34,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/Eonfge/cowsay.git",
-                    "tag": "1.8.0",
-                    "commit": "3deae1c535e1edd4361fc90af1fff645957626e5"
+                    "tag": "1.8.1",
+                    "commit": "db367ada5ff14576201a083137d93004b4f99cdf"
                 }
             ]
         }
