@@ -7,7 +7,7 @@
     "finish-args" : [
         "--share=network",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland"
     ],
     "cleanup" : [
@@ -34,8 +34,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/Eonfge/cowsay.git",
-                    "tag": "1.8.2",
-                    "commit": "bd5734679b981f9e679cb9d849872d9435a2bd77"
+                    "tag": "1.9.0",
+                    "commit": "2940e97743d217e03c13d501a651812e497d7a19"
                 }
             ]
         }
