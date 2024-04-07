@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.gitlab.Cowsay",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "cowsay",
     "finish-args" : [
@@ -35,8 +35,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/Eonfge/cowsay.git",
-                    "tag": "1.9.2",
-                    "commit": "409bc66c82d055ad1bf2e1cf09ab09cb11992125",
+                    "tag": "1.9.3",
+                    "commit": "6385481f50e990790a4d8d9ff013adf20c08d603",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
