@@ -1,16 +1,16 @@
 {
-    "app-id" : "org.gnome.gitlab.Cowsay",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "cowsay",
-    "finish-args" : [
+    "app-id": "org.gnome.gitlab.Cowsay",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "45",
+    "sdk": "org.gnome.Sdk",
+    "command": "cowsay",
+    "finish-args": [
         "--share=network",
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland"
     ],
-    "cleanup" : [
+    "cleanup": [
         "/include",
         "/lib/pkgconfig",
         "/man",
@@ -22,21 +22,21 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
+    "modules": [
         "shared-modules/libsoup/libsoup-2.4.json",
         {
-            "name" : "cowsay",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "cowsay",
+            "buildsystem": "meson",
+            "config-opts": [
                 "--libdir=lib"
             ],
-            "builddir" : true,
-            "sources" : [
+            "builddir": true,
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/Eonfge/cowsay.git",
-                    "tag": "1.9.2",
-                    "commit": "409bc66c82d055ad1bf2e1cf09ab09cb11992125",
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/Eonfge/cowsay.git",
+                    "tag": "1.9.3",
+                    "commit": "6385481f50e990790a4d8d9ff013adf20c08d603",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
