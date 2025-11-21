@@ -4,5 +4,4 @@
 https://flathub.org/apps/details/org.gnome.gitlab.Cowsay
 
 ## Main development
-https://gitlab.gnome.org/Eonfge/cowsay/
-
+https://gitlab.com/Eonfge/cowsay
